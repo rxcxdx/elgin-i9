@@ -1,2 +1,3 @@
-# elgin-i9
-Descrição do github
+arquivo ppd para a impressora ELGIN-i9
+
+tamanho do papel customizado
