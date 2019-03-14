@@ -1,3 +1,3 @@
-arquivo ppd para a impressora ELGIN-i9
+# Arquivo ppd para a impressora ELGIN-i9
 
-tamanho do papel customizado
+Tamanho do papel customizado
