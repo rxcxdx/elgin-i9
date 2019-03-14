@@ -1,0 +1,292 @@
+*PPD-Adobe: "4.3"
+*%%%% PPD file for Elgin i9 with CUPS.
+*%%%% Created by the CUPS PPD Compiler CUPS v1.7.0.
+
+
+*FormatVersion: "4.3"
+*FileVersion: "0.1.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "i9.ppd"
+*Product: "(i9)"
+*Manufacturer: "Elgin"
+*ModelName: "Elgin i9"
+*ShortNickName: "Elgin i9"
+*NickName: "Elgin i9, 0.1.1"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.7
+*cupsModelNumber: 4099
+*cupsManualCopies: False
+*cupsFilter: "application/vnd.cups-raster 100 rastertohprt"
+*cupsLanguages: "en"
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/PageSize: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: RCDPAPER
+*PageSize RCDPAPER: " "
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: RCDPAPER
+*PageRegion RCDPAPER: RCDPAPER
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: RCDPAPER
+*ImageableArea RCDPAPER: "0 0 203 140"
+*DefaultPaperDimension: RCDPAPER
+*PaperDimension RCDPAPER: "204 141"
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 203x203dpi
+*Resolution 203x203dpi/203 x 203 dpi: "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *Formfeed/Formfeed Mode: PickOne
+*OrderDependency: 10 AnySetup *Formfeed
+*DefaultFormfeed: 2
+*Formfeed 0/None : ""
+*Formfeed 1/Auto formfeed paper  : ""
+*Formfeed 2/Auto cut paper : ""
+*Formfeed 3/Auto cut each page : ""
+
+*CloseUI: *Formfeed
+
+*OpenUI *FormfeedLength/Formfeed Length: PickOne
+*OrderDependency: 11 AnySetup *FormfeedLength
+*DefaultFormfeedLength: 0
+*FormfeedLength 0/0.0cm: ""
+*FormfeedLength 1/0.5cm: ""
+*FormfeedLength 2/1.0cm: ""
+*FormfeedLength 3/1.5cm: ""
+*FormfeedLength 4/2.0cm: ""
+*FormfeedLength 5/2.5cm: ""
+*FormfeedLength 6/3.0cm: ""
+
+*CloseUI: *FormfeedLength
+
+*OpenUI *CutPaperLength/CutPaper Length: PickOne
+*OrderDependency: 11 AnySetup *CutPaperLength
+*DefaultCutPaperLength: 0
+*CutPaperLength 0/0.0cm: ""
+*CutPaperLength 1/0.5cm: ""
+*CutPaperLength 2/1.0cm: ""
+*CutPaperLength 3/1.5cm: ""
+*CutPaperLength 4/2.0cm: ""
+*CutPaperLength 5/2.5cm: ""
+*CutPaperLength 6/3.0cm: ""
+
+*CloseUI: *CutPaperLength
+
+*CloseGroup: General
+
+*OpenGroup: PaperSaveControl/Paper Save Control
+
+*OpenUI *PaperSaveBottom/Paper Save Bottom: PickOne
+*OrderDependency: 11 AnySetup *PaperSaveBottom
+*DefaultPaperSaveBottom: 1
+*PaperSaveBottom 0/NO: ""
+*PaperSaveBottom 1/YES: ""
+*CloseUI: *PaperSaveBottom
+
+*OpenUI *PaperSaveMode/Paper Save Mode: PickOne
+*OrderDependency: 11 AnySetup *PaperSaveMode
+*DefaultPaperSaveMode: 0
+*PaperSaveMode 0/0: ""
+*PaperSaveMode 1/25%: ""
+*PaperSaveMode 2/50%: ""
+*PaperSaveMode 3/75%: ""
+*CloseUI: *PaperSaveMode
+
+*CloseGroup: PaperSaveControl
+
+*OpenGroup: LogoControl/Logo Control
+
+*OpenUI *PrintLogo/Print Logo: PickOne
+*OrderDependency: 11 AnySetup *PrintLogo
+*DefaultPrintLogo: 0
+*PrintLogo 0/None: ""
+*PrintLogo 1/Print Start: ""
+*PrintLogo 2/Print End: ""
+*CloseUI: *Logo
+
+*OpenUI *Logo/Logo: PickOne
+*OrderDependency: 11 AnySetup *Logo
+*DefaultLogo: 0
+*Logo None/None: ""
+*Logo 0/Logo0: ""
+*Logo 1/Logo1: ""
+*Logo 2/Logo2: ""
+*Logo 3/Logo3: ""
+*Logo 4/Logo4: ""
+*Logo 5/Logo5: ""
+*Logo 6/Logo6: ""
+*Logo 7/Logo7: ""
+*Logo 8/Logo8: ""
+*Logo 9/Logo9: ""
+
+*CloseUI: *Logo
+
+*OpenUI *LogoAlign/Logo Align: PickOne
+*OrderDependency: 11 AnySetup *LogoAlign
+*DefaultLogoAlign: 0
+*LogoAlign 0/Auto: ""
+*LogoAlign 1/Left: ""
+*LogoAlign 2/Center: ""
+*LogoAlign 3/Right: ""
+
+*CloseUI: *LogoAlign
+
+*CloseGroup: Logo
+
+
+*OpenGroup: BuzzerControl/Buzzer Control
+
+*%Buzzer settings.
+*OpenUI *BeepControl/Beep Control: PickOne
+*OrderDependency: 11 AnySetup *BeepControl
+*DefaultBeepControl: 0
+*BeepControl 0/None: ""
+*BeepControl 1/Before Print: ""
+*BeepControl 2/After Print: ""
+*CloseUI: *BeepControl
+
+*%Sound pattern settings.
+*OpenUI *BeepDuration/Beep Duration: PickOne
+*OrderDependency: 11 AnySetup *BeepDuration
+*DefaultBeepDuration: 0
+*BeepDuration 0/0.0s: ""
+*BeepDuration 1/0.5s: ""
+*BeepDuration 2/1.0s: ""
+*BeepDuration 3/1.5s: ""
+*BeepDuration 4/2.0s: ""
+*BeepDuration 5/2.5s: ""
+*BeepDuration 6/3.0s: ""
+
+*CloseUI: *BeepDuration
+
+*%Sound pattern settings.
+*OpenUI *Beepinterval/Beep Interval: PickOne
+*OrderDependency: 11 AnySetup *Beepinterval
+*DefaultBeepinterval: 0
+*Beepinterval 0/0.0s: ""
+*Beepinterval 1/0.5s: ""
+*Beepinterval 2/1.0s: ""
+*Beepinterval 3/1.5s: ""
+*Beepinterval 4/2.0s: ""
+*Beepinterval 5/2.5s: ""
+*Beepinterval 6/3.0s: ""
+
+*CloseUI: *Beepinterval
+
+*%Buzzer repeat settings.
+*OpenUI *BeepRepeat/Beep Repeat: PickOne
+*OrderDependency: 11 AnySetup *BeepRepeat
+*DefaultBeepRepeat: 1
+*BeepRepeat 1/1: ""
+*BeepRepeat 2/2: ""
+*BeepRepeat 3/3: ""
+*BeepRepeat 5/5: ""
+*CloseUI: *BeepRepeat
+
+*CloseGroup: BuzzerControl
+
+
+*OpenGroup: ExternalBuzzerControl/External Buzzer Control
+
+*%Buzzer settings.
+*OpenUI *ExternalBeepControl/External Beep Control: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepControl
+*DefaultExternalBeepControl: 0
+*ExternalBeepControl 0/None: ""
+*ExternalBeepControl 1/Before Print: ""
+*ExternalBeepControl 2/After Print: ""
+*CloseUI: *ExternalBeepControl
+
+*%Sound pattern settings.
+*OpenUI *ExternalBeepDuration/External Beep Duration: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepDuration
+*DefaultExternalBeepDuration: 0
+*ExternalBeepDuration 0/0.0s: ""
+*ExternalBeepDuration 1/0.1s: ""
+*ExternalBeepDuration 2/0.2s: ""
+*ExternalBeepDuration 3/0.3s: ""
+*ExternalBeepDuration 4/0.4s: ""
+*ExternalBeepDuration 5/0.5s: ""
+
+*CloseUI: *ExternalBeepDuration
+
+*%Sound pattern settings.
+*OpenUI *ExternalBeepinterval/External Beep Interval: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepinterval
+*DefaultExternalBeepinterval: 0
+*ExternalBeepinterval 0/0.0s: ""
+*ExternalBeepinterval 1/0.1s: ""
+*ExternalBeepinterval 2/0.2s: ""
+*ExternalBeepinterval 3/0.3s: ""
+*ExternalBeepinterval 4/0.4s: ""
+*ExternalBeepinterval 5/0.5s: ""
+
+*CloseUI: *ExternalBeepinterval
+
+*%Buzzer repeat settings.
+*OpenUI *ExternalBeepRepeat/External Beep Repeat: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepRepeat
+*DefaultExternalBeepRepeat: 1
+*ExternalBeepRepeat 1/1: ""
+*ExternalBeepRepeat 2/2: ""
+*ExternalBeepRepeat 3/3: ""
+*ExternalBeepRepeat 5/5: ""
+*CloseUI: *ExternalBeepRepeat
+
+*CloseGroup: ExternalBuzzerControl
+
+
+*OpenGroup: CashDrawerControl/Cash Drawer Control
+
+*%Drawer settings.
+*OpenUI *drawer1/drawer#1: PickOne
+*OrderDependency: 11 AnySetup *drawer1
+*Defaultdrawer1: 0
+*drawer1 0/None: ""
+*drawer1 1/Open before print: ""
+*drawer1 2/Open after print: ""
+*CloseUI: *drawer1
+
+*OpenUI *drawer2/drawer#2: PickOne
+*OrderDependency: 11 AnySetup *drawer2
+*Defaultdrawer2: 0
+*drawer2 0/None: ""
+*drawer2 1/Open before print: ""
+*drawer2 2/Open after print: ""
+*CloseUI: *drawer2
+
+*CloseGroup: CashDrawerControl
+
+
+*OpenGroup: DataCompression/Data Compression
+
+*%Compression settings.
+*OpenUI *compression/compression: PickOne
+*OrderDependency: 11 AnySetup *compression
+*Defaultcompression: 0
+*compression 0/NO: ""
+*compression 1/YES: ""
+*CloseUI: *compression
+
+*CloseGroup: DataCompression
+
+*NumCopies : "<</NumCopies 2>>setpagedevice"
+
+*DefaultFont: Courier
+*% End of i7.ppd, 13060 bytes.
